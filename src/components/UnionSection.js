@@ -29,7 +29,7 @@ export default function UnionSection() {
             <div className="flex items-start gap-4 md:gap-6">
                 <div className="flex-shrink-0">
                     <Image
-                        src="/testimonios/perfil1.jpg"
+                        src="/img-blank-profile.jpg"
                         alt="Foto de Juan Pérez"
                         width={64}
                         height={64}
@@ -47,7 +47,7 @@ export default function UnionSection() {
             <div className="flex items-start gap-4 md:gap-6 flex-row-reverse text-right">
                 <div className="flex-shrink-0">
                     <Image
-                        src="/testimonios/perfil2.jpg"
+                        src="/img-blank-profile.jpg"
                         alt="Foto de María Gómez"
                         width={64}
                         height={64}
@@ -65,7 +65,7 @@ export default function UnionSection() {
             <div className="flex items-start gap-4 md:gap-6">
                 <div className="flex-shrink-0">
                     <Image
-                        src="/testimonios/perfil3.jpg"
+                        src="/img-blank-profile.jpg"
                         alt="Foto de Luis Martínez"
                         width={64}
                         height={64}
@@ -83,7 +83,7 @@ export default function UnionSection() {
             <div className="flex items-start gap-4 md:gap-6 flex-row-reverse text-right">
                 <div className="flex-shrink-0">
                     <Image
-                        src="/testimonios/perfil4.jpg"
+                        src="/img-blank-profile.jpg"
                         alt="Foto de Ana Ruiz"
                         width={64}
                         height={64}

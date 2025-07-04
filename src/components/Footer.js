@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         {/* Layout Desktop */}
         <div className="hidden md:block">
-          <div className="grid grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-4 gap-8 mb-8 justify-items-center">
             {/* Columna 1: Logo y mensaje */}
             <div className="col-span-1">
                 <div className="w-40 h-40 mb-4 rounded-full flex items-center justify-center overflow-hidden">
