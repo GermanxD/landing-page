@@ -1,3 +1,5 @@
+import { MessageCircle } from 'lucide-react';
+
 export default function DirectorsSection() {
   return (
     <section className="px-4 py-8 w-full max-w-6xl mx-auto">
@@ -26,25 +28,25 @@ export default function DirectorsSection() {
             
             <div className="space-y-4 md:space-y-6">
               {/* Botón de mensaje principal */}
-              <button className="text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium text-sm md:text-base lg:text-lg w-full md:w-auto hover:opacity-90 transition-opacity" style={{ backgroundColor: 'var(--cocoa-brown)' }}>
-                📱 Mándanos un mensaje
-              </button>
-              
-              {/* Información adicional - Solo desktop */}
+              <a
+                href="https://wa.me/525551234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full md:w-auto"
+              >
+                <button
+                  className="flex items-center justify-center gap-2 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-medium text-sm md:text-base lg:text-lg w-full md:w-auto hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: 'var(--cocoa-brown)' }}
+                  type="button"
+                >
+                  Mándanos un mensaje
+                  <MessageCircle className="w-6 h-6 transition-transform" style={{ color: 'var(--peach)' }} />
+                </button>
+              </a>
               <div className="hidden md:block space-y-3">
                 <p className="text-sm lg:text-base opacity-80" style={{ color: 'var(--dim-gray)' }}>
-                  Únete a nuestra comunidad de jóvenes que comparten valores cristianos y pasión por el jiu-jitsu.
+                  Únete a nuestra comunidad de jóvenes cristianos comprometidos con la fe bautista y el servicio.
                 </p>
-                <div className="flex gap-4 text-sm">
-                  <div className="text-center">
-                    <p className="font-bold text-lg" style={{ color: 'var(--cocoa-brown)' }}>5+</p>
-                    <p className="opacity-75" style={{ color: 'var(--dim-gray)' }}>Años</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-bold text-lg" style={{ color: 'var(--cocoa-brown)' }}>10+</p>
-                    <p className="opacity-75" style={{ color: 'var(--dim-gray)' }}>Iglesias</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -60,23 +62,7 @@ export default function DirectorsSection() {
                   <span className="text-3xl lg:text-4xl">👥</span>
                 </div>
                 <span className="text-base lg:text-lg font-medium" style={{ color: 'var(--dim-gray)' }}>Mesa Directiva URBJJ</span>
-                <p className="text-sm lg:text-base mt-2 opacity-75" style={{ color: 'var(--dim-gray)' }}>Líderes comprometidos con la comunidad</p>
-              </div>
-            </div>
-            
-            {/* Características destacadas */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-                <div className="w-8 h-8 mx-auto mb-2 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--cocoa-brown)' }}>
-                  <span className="text-white text-sm">🤝</span>
-                </div>
-                <p className="text-sm font-medium" style={{ color: 'var(--dim-gray)' }}>Liderazgo colaborativo</p>
-              </div>
-              <div className="text-center p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-                <div className="w-8 h-8 mx-auto mb-2 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--peach)' }}>
-                  <span className="text-white text-sm">⭐</span>
-                </div>
-                <p className="text-sm font-medium" style={{ color: 'var(--dim-gray)' }}>Valores sólidos</p>
+                <p className="text-sm lg:text-base mt-2 opacity-75" style={{ color: 'var(--dim-gray)' }}>Líderes comprometidos con la comunidad cristiana</p>
               </div>
             </div>
           </div>
