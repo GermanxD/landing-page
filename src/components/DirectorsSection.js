@@ -5,7 +5,7 @@ export default function DirectorsSection() {
         {/* Mesa Directiva - Desktop: columna izquierda */}
         <div className="text-center md:text-left mb-6 md:mb-0">
           <h3 className="text-lg md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 py-2 md:py-3 rounded inline-block px-4 md:px-6" style={{ color: 'var(--dim-gray)', backgroundColor: 'var(--baby-powder)' }}>
-            MESA DIRECTIVA
+            Mesa Directiva
           </h3>
           
           <div className="md:hidden mb-6">

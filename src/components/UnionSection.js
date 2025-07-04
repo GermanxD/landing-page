@@ -4,26 +4,24 @@ export default function UnionSection() {
   return (
     <section className="px-4 py-8 w-full max-w-6xl mx-auto">
     {/* ¡Somos una Unión! */}
-    <div className="text-center mb-8 md:mb-12">
-        <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8" style={{ color: 'var(--cocoa-brown)' }}>
+    <div className="text-center">
+        <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold" style={{ color: 'var(--cocoa-brown)' }}>
             ¡Somos una Unión!
         </h3>
-        
-        {/* Logo URBJJ */}
-        <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto mb-6 md:mb-8 rounded-full flex items-center justify-center bg-gradient-urbjj">
-            <Image
+            <div className="w-40 h-40 md:w-52 md:h-52 lg:w-60 lg:h-60 mx-auto rounded-full flex items-center justify-center bg-gradient-urbjj">
+                <Image
                 src="/urbjjlogo.png"
                 alt="Logo URBJJ"
-                width={192}
-                height={192}
-                className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain"
+                width={600}
+                height={600}
+                className="w-32 h-32 md:w-42 md:h-42 lg:w-52 lg:h-52 object-contain"
                 priority
-            />
-        </div>
-    </div>
+                />
+            </div>
+            </div>
 
-    <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
-        {/* Testimonios escalonados con foto de perfil */}
+            <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
+            {/* Testimonios escalonados con foto de perfil */}
         <div className="mb-8 md:mb-0 flex flex-col gap-8">
             {/* Testimonio 1 - Izquierda */}
             <div className="flex items-start gap-4 md:gap-6">
