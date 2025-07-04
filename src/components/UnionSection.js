@@ -116,18 +116,6 @@ export default function UnionSection() {
           <p className="text-sm md:text-base italic text-center" style={{ color: 'var(--cocoa-brown)' }}>
             Jóvenes de URBJJ unidos en alabanza y fe
           </p>
-
-          {/* Estadísticas destacadas - Solo desktop */}
-          <div className="hidden md:grid md:grid-cols-2 gap-4 lg:gap-6">
-            <div className="text-center p-4 lg:p-6 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-              <p className="text-2xl lg:text-3xl font-bold mb-1" style={{ color: 'var(--cocoa-brown)' }}>200+</p>
-              <p className="text-sm lg:text-base" style={{ color: 'var(--dim-gray)' }}>Miembros activos</p>
-            </div>
-            <div className="text-center p-4 lg:p-6 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-              <p className="text-2xl lg:text-3xl font-bold mb-1" style={{ color: 'var(--cocoa-brown)' }}>5+</p>
-              <p className="text-sm lg:text-base" style={{ color: 'var(--dim-gray)' }}>Años unidos</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

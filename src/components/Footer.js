@@ -18,41 +18,16 @@ export default function Footer() {
                         className="w-full h-full object-contain"
                     />
                 </div>
+            </div>
+
+            {/* Columna 2: Enlaces rápidos */}
+            <div className="col-span-1">
                 <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--peach)' }}>
                     Una comunidad para ti
                 </h3>
                 <p className="text-sm opacity-90 leading-relaxed">
                     Unión Regional Bautista de Jóvenes Jerusalén - Más que una comunidad, somos una familia unida por la fe y los valores bautistas.
                 </p>
-            </div>
-
-            {/* Columna 2: Enlaces rápidos */}
-            <div className="col-span-1">
-              <h4 className="text-lg font-semibold mb-4" style={{ color: 'var(--peach)' }}>
-                Navegación
-              </h4>
-              <div className="space-y-3">
-                <Link href="/about" className="group block hover:translate-x-1 transition-all duration-200">
-                  <div className="flex items-center gap-3">
-                    <Heart className="w-5 h-5" style={{ color: 'var(--peach)' }} />
-                    <span className="text-sm group-hover:opacity-75">Acerca de URBJJ</span>
-                  </div>
-                </Link>
-                <Link href="/directorio" className="group block hover:translate-x-1 transition-all duration-200">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5" style={{ color: 'var(--peach)' }} />
-                    <span className="text-sm group-hover:opacity-75">Ubicaciones</span>
-                  </div>
-                </Link>
-                <Link href="/actividades" className="group block hover:translate-x-1 transition-all duration-200">
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--peach)' }}>
-                      <span className="text-xs font-bold" style={{ color: 'var(--dim-gray)' }}>A</span>
-                    </div>
-                    <span className="text-sm group-hover:opacity-75">Actividades</span>
-                  </div>
-                </Link>
-              </div>
             </div>
 
             {/* Columna 3: Información de contacto */}
@@ -120,11 +95,6 @@ export default function Footer() {
                   >
                     <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
                   </a>
-                </div>
-                <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-                  <p className="text-2xl font-bold mb-1" style={{ color: 'var(--peach)' }}>200+</p>
-                  <p className="text-sm opacity-90">Miembros activos</p>
-                  <p className="text-xs opacity-75 mt-1">¡Y seguimos creciendo!</p>
                 </div>
               </div>
             </div>
@@ -241,12 +211,6 @@ export default function Footer() {
                 >
                   <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
                 </a>
-              </div>
-              
-              {/* Estadística destacada */}
-              <div className="inline-block p-3 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-                <p className="text-lg font-bold" style={{ color: 'var(--peach)' }}>200+ miembros</p>
-                <p className="text-xs opacity-75">¡Y seguimos creciendo!</p>
               </div>
             </div>
 

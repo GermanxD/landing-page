@@ -37,10 +37,6 @@ export default function DirectorsSection() {
                 </p>
                 <div className="flex gap-4 text-sm">
                   <div className="text-center">
-                    <p className="font-bold text-lg" style={{ color: 'var(--cocoa-brown)' }}>200+</p>
-                    <p className="opacity-75" style={{ color: 'var(--dim-gray)' }}>Miembros</p>
-                  </div>
-                  <div className="text-center">
                     <p className="font-bold text-lg" style={{ color: 'var(--cocoa-brown)' }}>5+</p>
                     <p className="opacity-75" style={{ color: 'var(--dim-gray)' }}>Años</p>
                   </div>
