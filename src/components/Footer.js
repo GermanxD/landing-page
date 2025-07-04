@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         {/* Layout Desktop */}
         <div className="hidden md:block">
-          <div className="grid grid-cols-4 gap-8 mb-8 justify-items-center">
+          <div className="grid grid-cols-4 gap-8 mb-8">
             {/* Columna 1: Logo y mensaje */}
             <div className="col-span-1">
                 <div className="w-40 h-40 mb-4 rounded-full flex items-center justify-center overflow-hidden">
@@ -75,7 +75,7 @@ export default function Footer() {
                     href="https://instagram.com/urbjj" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group p-3 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10"
+                    className="group p-3 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10"
                   >
                     <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
                   </a>
@@ -83,18 +83,23 @@ export default function Footer() {
                     href="https://facebook.com/urbjj" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group p-3 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10"
+                    className="group p-3 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10"
                   >
                     <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
                   </a>
-                  <a 
-                    href="https://wa.me/525551234567" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-3 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10"
-                  >
-                    <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
-                  </a>
+                    <a 
+                      href="https://wa.me/525551234567" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group p-3 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10"
+                    >
+                      <img
+                      src="/whatsapp.svg"
+                      alt="WhatsApp"
+                      className="w-6 h-6 group-hover:scale-110 transition-transform"
+                      style={{ color: 'var(--peach)', minWidth: '24px', minHeight: '24px', alignContent: 'center'}}
+                      />
+                    </a>
                 </div>
               </div>
             </div>
@@ -137,21 +142,21 @@ export default function Footer() {
             {/* Enlaces rápidos */}
             <div className="grid grid-cols-3 gap-3">
               <Link href="/about" className="group">
-                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10 text-center">
+                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10 text-center">
                   <Heart className="w-6 h-6 mx-auto mb-2" style={{ color: 'var(--peach)' }} />
                   <span className="text-xs font-medium block">Acerca de</span>
                 </div>
               </Link>
               
               <Link href="/directorio" className="group">
-                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10 text-center">
+                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10 text-center">
                   <MapPin className="w-6 h-6 mx-auto mb-2" style={{ color: 'var(--peach)' }} />
                   <span className="text-xs font-medium block">Ubicaciones</span>
                 </div>
               </Link>
               
               <Link href="/actividades" className="group">
-                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-white hover:bg-opacity-10 text-center">
+                <div className="p-4 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10 text-center">
                   <div className="w-6 h-6 mx-auto mb-2 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--peach)' }}>
                     <span className="text-sm font-bold" style={{ color: 'var(--dim-gray)' }}>A</span>
                   </div>
@@ -180,41 +185,45 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            
             {/* Redes sociales */}
-            <div className="text-center">
-              <h4 className="text-sm font-semibold mb-3" style={{ color: 'var(--peach)' }}>
-                Síguenos
-              </h4>
-              <div className="flex justify-center gap-6 mb-4">
-                <a 
-                  href="https://instagram.com/urbjj" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-2 rounded-full transition-all duration-200 hover:bg-white hover:bg-opacity-10"
-                >
-                  <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
-                </a>
-                <a 
-                  href="https://facebook.com/urbjj" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-2 rounded-full transition-all duration-200 hover:bg-white hover:bg-opacity-10"
-                >
-                  <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
-                </a>
-                <a 
-                  href="https://wa.me/525551234567" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-2 rounded-full transition-all duration-200 hover:bg-white hover:bg-opacity-10"
-                >
-                  <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
-                </a>
-              </div>
-            </div>
+                  <div className="text-center">
+                    <h4 className="text-sm font-semibold mb-3" style={{ color: 'var(--peach)' }}>
+                    Síguenos
+                    </h4>
+                    <div className="flex justify-center gap-6 mb-4">
+                    <a 
+                      href="https://instagram.com/urbjj" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group p-2 rounded-full transition-all duration-200 hover:bg-black hover:bg-opacity-10"
+                    >
+                      <Instagram className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
+                    </a>
+                    <a 
+                      href="https://facebook.com/urbjj" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group p-2 rounded-full transition-all duration-200 hover:bg-black hover:bg-opacity-10"
+                    >
+                      <Facebook className="w-6 h-6 group-hover:scale-110 transition-transform" style={{ color: 'var(--peach)' }} />
+                    </a>
+                    <a 
+                      href="https://wa.me/525551234567" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group p-2 rounded-full transition-all duration-200 hover:bg-black hover:bg-opacity-10"
+                    >
+                      <img
+                      src="/whatsapp.svg"
+                      alt="WhatsApp"
+                      className="w-6 h-6 group-hover:scale-110 transition-transform"
+                      style={{ color: 'var(--peach)' }}
+                      />
+                    </a>
+                    </div>
+                  </div>
 
-            {/* Copyright */}
+                  {/* Copyright */}
             <div className="border-t border-white border-opacity-20 pt-4 text-center">
               <p className="text-xs opacity-75 mb-2">
                 © 2025 URBJJ - Unión Regional Bautista de Jóvenes Jerusalén
