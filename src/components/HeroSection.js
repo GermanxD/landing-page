@@ -1,4 +1,4 @@
-import { Users, Clock } from "lucide-react";
+import { Users, Clock, Calendar, Lightbulb, Heart } from "lucide-react";
 
 export default function HeroSection() {
     return (
@@ -31,7 +31,7 @@ export default function HeroSection() {
                         {/* Card "Actividades recreativas y eventos especiales" */}
                         <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
                             <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full" style={{ backgroundColor: 'var(--cocoa-brown)' }}></div>
+                                <Calendar className="w-5 h-5 md:w-6 md:h-6" style={{ color: 'var(--cocoa-brown)' }} />
                                 <span className="font-medium text-sm md:text-base" style={{ color: 'var(--dim-gray)' }}>Actividades recreativas y eventos especiales</span>
                             </div>
                             <p className="hidden md:block text-sm mt-2 opacity-80" style={{ color: 'var(--dim-gray)' }}>
@@ -42,7 +42,7 @@ export default function HeroSection() {
                         {/* Card "Consejos que si te sirven en la vida" */}
                         <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
                             <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full" style={{ backgroundColor: 'var(--peach)' }}></div>
+                                <Lightbulb className="w-5 h-5 md:w-6 md:h-6" style={{ color: 'var(--peach)' }} />
                                 <span className="font-medium text-sm md:text-base" style={{ color: 'var(--dim-gray)' }}>Consejos que si te sirven en la vida</span>
                             </div>
                             <p className="hidden md:block text-sm mt-2 opacity-80" style={{ color: 'var(--dim-gray)' }}>
@@ -53,7 +53,7 @@ export default function HeroSection() {
                         {/* Card "Gente bonita y con buen corazón" */}
                         <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
                             <div className="flex items-center gap-3">
-                                <div className="w-3 h-3 md:w-4 md:h-4 rounded-full" style={{ backgroundColor: 'var(--cocoa-brown)' }}></div>
+                                <Heart className="w-5 h-5 md:w-6 md:h-6" style={{ color: 'var(--cocoa-brown)' }} />
                                 <span className="font-medium text-sm md:text-base" style={{ color: 'var(--dim-gray)' }}>Gente bonita y con buen corazón</span>
                             </div>
                             <p className="hidden md:block text-sm mt-2 opacity-80" style={{ color: 'var(--dim-gray)' }}>
