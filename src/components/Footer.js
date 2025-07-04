@@ -11,15 +11,19 @@ export default function Footer() {
           <div className="grid grid-cols-4 gap-8 mb-8">
             {/* Columna 1: Logo y mensaje */}
             <div className="col-span-1">
-              <div className="w-20 h-20 mb-4 bg-gradient-urbjj rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">URBJJ</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--peach)' }}>
-                Una comunidad para ti
-              </h3>
-              <p className="text-sm opacity-90 leading-relaxed">
-                Unión Regional Bautista de Jóvenes Jerusalén - Más que una comunidad, somos una familia unida por la fe y los valores bautistas.
-              </p>
+                <div className="w-40 h-40 mb-4 rounded-full flex items-center justify-center overflow-hidden">
+                    <img
+                        src="/urbjjlogo.png"
+                        alt="Logo URBJJ"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
+                <h3 className="text-xl font-bold mb-3" style={{ color: 'var(--peach)' }}>
+                    Una comunidad para ti
+                </h3>
+                <p className="text-sm opacity-90 leading-relaxed">
+                    Unión Regional Bautista de Jóvenes Jerusalén - Más que una comunidad, somos una familia unida por la fe y los valores bautistas.
+                </p>
             </div>
 
             {/* Columna 2: Enlaces rápidos */}
