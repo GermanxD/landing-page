@@ -11,9 +11,13 @@ export default function DirectorsSection() {
           </h3>
           
           <div className="md:hidden mb-6">
-            {/* Imagen placeholder para mesa directiva - Mobile */}
-            <div className="w-full h-32 rounded-lg mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--baby-powder)' }}>
-              <span style={{ color: 'var(--dim-gray)' }}>Imagen Mesa Directiva</span>
+            {/* Imagen real para mesa directiva - Mobile */}
+            <div className="w-full h-32 rounded-lg mb-4 flex items-center justify-center overflow-hidden" style={{ backgroundColor: 'var(--baby-powder)' }}>
+              <img
+                src="/mesa-directiva.jpeg"
+                alt="Mesa Directiva"
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
           
@@ -55,15 +59,13 @@ export default function DirectorsSection() {
         {/* Imagen y contenido visual - Desktop: columna derecha */}
         <div className="hidden md:block">
           <div className="space-y-6">
-            {/* Imagen placeholder para mesa directiva - Desktop */}
-            <div className="w-full h-64 lg:h-80 rounded-xl flex items-center justify-center shadow-lg" style={{ backgroundColor: 'var(--baby-powder)' }}>
-              <div className="text-center">
-                <div className="w-20 h-20 lg:w-24 lg:h-24 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--peach)' }}>
-                  <span className="text-3xl lg:text-4xl">👥</span>
-                </div>
-                <span className="text-base lg:text-lg font-medium" style={{ color: 'var(--dim-gray)' }}>Mesa Directiva URBJJ</span>
-                <p className="text-sm lg:text-base mt-2 opacity-75" style={{ color: 'var(--dim-gray)' }}>Líderes comprometidos con la comunidad cristiana</p>
-              </div>
+            {/* Imagen real para mesa directiva - Desktop */}
+            <div className="w-full h-64 lg:h-80 rounded-xl flex items-center justify-center shadow-lg overflow-hidden" style={{ backgroundColor: 'var(--baby-powder)' }}>
+              <img
+                src="/mesa-directiva.jpeg"
+                alt="Mesa Directiva URBJJ"
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         </div>
