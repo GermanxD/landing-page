@@ -112,28 +112,10 @@ export default function UnionSection() {
               blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
           </div>
-          
+
           <p className="text-sm md:text-base italic text-center" style={{ color: 'var(--cocoa-brown)' }}>
             Jóvenes de URBJJ unidos en alabanza y fe
           </p>
-
-          {/* Círculos de colores (testimonios) - Mobile */}
-          <div className="md:hidden space-y-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full" style={{ backgroundColor: 'var(--peach)' }}></div>
-              <span className="text-sm" style={{ color: 'var(--dim-gray)' }}>Testimonios reales</span>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full" style={{ backgroundColor: 'var(--cocoa-brown)' }}></div>
-              <span className="text-sm" style={{ color: 'var(--dim-gray)' }}>Valores compartidos</span>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <span className="text-sm" style={{ color: 'var(--dim-gray)' }}>Crecimiento personal</span>
-              <div className="w-12 h-12 rounded-full ml-auto" style={{ backgroundColor: 'var(--peach)' }}></div>
-            </div>
-          </div>
 
           {/* Estadísticas destacadas - Solo desktop */}
           <div className="hidden md:grid md:grid-cols-2 gap-4 lg:gap-6">
