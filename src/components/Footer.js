@@ -72,7 +72,7 @@ export default function Footer() {
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <a 
-                    href="https://instagram.com/urbjj" 
+                    href="https://www.instagram.com/yosoyurbjj/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group p-3 rounded-lg transition-all duration-200 hover:bg-black hover:bg-opacity-10"
@@ -192,7 +192,7 @@ export default function Footer() {
                     </h4>
                     <div className="flex justify-center gap-6 mb-4">
                     <a 
-                      href="https://instagram.com/urbjj" 
+                      href="https://www.instagram.com/yosoyurbjj/" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group p-2 rounded-full transition-all duration-200 hover:bg-black hover:bg-opacity-10"
