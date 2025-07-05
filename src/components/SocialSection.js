@@ -1,6 +1,8 @@
 import Image from "next/image";
+import InstagramEmbed from "./InstagramEmbed";
 
 export default function SocialSection() {
+
   return (
     <section className="px-4 py-8 w-full max-w-6xl mx-auto">
       <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16">
@@ -31,6 +33,7 @@ export default function SocialSection() {
               <button className="px-4 py-2 md:px-6 md:py-3 rounded-lg text-white text-sm md:text-base font-medium hover:opacity-90 transition-opacity" style={{ backgroundColor: 'var(--cocoa-brown)' }}>
                 Seguir en Instagram
               </button>
+              <InstagramEmbed className="mt-4" />
             </div>
           </div>
 
