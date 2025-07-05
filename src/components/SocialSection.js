@@ -9,27 +9,28 @@ export default function SocialSection() {
         Síguenos en nuestras redes sociales
       </h4>
       {/* Redes sociales: Instagram y Facebook lado a lado */}
-      <div className="flex flex-col md:flex-row md:justify-center md:gap-8">
-        {/* Instagram */}
-        <div className="flex-1 mb-6 md:mb-0">
-          <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
-            <div className="text-center overflow-x-auto">
-              <InstagramEmbed className="mt-4 min-w-[300px]" />
-            </div>
-          </div>
-        </div>
-        {/* Facebook */}
-        <div className="flex-1">
-          <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
-            <div className="w-full overflow-x-auto">
-              <FacebookEmbed
-                pageUrl="https://www.facebook.com/URBJJ"
-                className="mt-4 w-full min-w-[300px]"
-              />
-            </div>
-          </div>
-        </div>
+<div className="flex flex-col md:flex-row md:justify-center md:gap-8">
+  {/* Instagram */}
+  <div className="flex-1 mb-6 md:mb-0">
+    <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow h-full min-h-[500px] md:min-h-[700px] lg:min-h-[800px]" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
+      <div className="text-center overflow-x-auto h-full flex items-start justify-center">
+        <InstagramEmbed className="mt-4 min-w-[300px] max-w-full" />
       </div>
+    </div>
+  </div>
+  {/* Facebook */}
+  <div className="flex-1">
+    <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow h-full min-h-[500px] md:min-h-[700px] lg:min-h-[800px]" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
+      <div className="w-full overflow-x-auto h-full">
+        <FacebookEmbed
+          pageUrl="https://www.facebook.com/URBJJ"
+          className="mt-4 w-full min-w-[300px] h-full"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
 
       {/* FAQ debajo, centrado */}
       <div className="mt-10 max-w-2xl mx-auto">

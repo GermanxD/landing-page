@@ -93,22 +93,22 @@ export default function FacebookEmbed({ pageUrl = "https://www.facebook.com/URBJ
   }, []);
 
   return (
-    <div ref={embedRef} className={`facebook-embed-container ${className}`} style={{ width: '100%', overflow: 'auto' }}>
+    <div ref={embedRef} className={`facebook-embed-container ${className}`} style={{ width: '100%', overflow: 'auto', height: '100%' }}>
       <div 
         className="fb-page" 
         data-href={pageUrl}
         data-tabs="timeline"
         data-width={isMobile ? "320" : "500"}
-        data-height={isMobile ? "400" : "700"}
+        data-height={isMobile ? "500" : "1000"}
         data-small-header={isMobile ? "true" : "false"}
         data-adapt-container-width="true"
         data-hide-cover={isMobile ? "true" : "false"}
         data-show-facepile="true"
-        style={{ width: '100%', minHeight: isMobile ? '400px' : '700px' }}
+        style={{ width: '100%', height: '100%', minHeight: isMobile ? '500px' : '1000px' }}
       >
         {/* Fallback content while loading */}
         <blockquote cite={pageUrl} className="fb-xfbml-parse-ignore">
-          <div className="flex items-center justify-center bg-gray-100 rounded-lg" style={{ minHeight: isMobile ? '400px' : '700px', padding: '1rem' }}>
+          <div className="flex items-center justify-center bg-gray-100 rounded-lg" style={{ height: '100%', minHeight: isMobile ? '500px' : '1000px', padding: '1rem' }}>
             <div className="text-center">
               <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
