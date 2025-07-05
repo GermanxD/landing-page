@@ -4,13 +4,14 @@ import FacebookEmbed from "./FacebookEmbed";
 export default function SocialSection() {
   return (
     <section className="px-4 py-8 w-full max-w-6xl mx-auto">
+      {/* Título general para redes sociales */}
+      <h4 className="text-lg md:text-xl font-semibold mb-8 text-center" style={{ color: 'var(--cocoa-brown)' }}>
+        Síguenos en nuestras redes sociales
+      </h4>
       {/* Redes sociales: Instagram y Facebook lado a lado */}
       <div className="flex flex-col md:flex-row md:justify-center md:gap-8">
         {/* Instagram */}
         <div className="flex-1 mb-6 md:mb-0">
-          <h4 className="text-lg md:text-xl font-semibold mb-4 md:mb-6" style={{ color: 'var(--cocoa-brown)' }}>
-            Síguenos en Instagram
-          </h4>
           <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
             <div className="text-center overflow-x-auto">
               <InstagramEmbed className="mt-4 min-w-[300px]" />
@@ -19,9 +20,6 @@ export default function SocialSection() {
         </div>
         {/* Facebook */}
         <div className="flex-1">
-          <h4 className="text-lg md:text-xl font-semibold mb-4 md:mb-6" style={{ color: 'var(--cocoa-brown)' }}>
-            Síguenos en Facebook
-          </h4>
           <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow" style={{ borderColor: 'var(--baby-powder)', borderWidth: '1px' }}>
             <div className="w-full overflow-x-auto">
               <FacebookEmbed
