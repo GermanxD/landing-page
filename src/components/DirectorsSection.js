@@ -5,11 +5,7 @@ export default function DirectorsSection() {
     <section className="px-4 py-8 w-full max-w-6xl mx-auto">
       <div className="md:grid md:grid-cols-2 md:gap-12 lg:gap-16 md:items-center">
         {/* Mesa Directiva - Desktop: columna izquierda */}
-        <div className="text-center md:text-left mb-6 md:mb-0">
-          <h3 className="text-lg md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 py-2 md:py-3 rounded inline-block px-4 md:px-6" style={{ color: 'var(--dim-gray)', backgroundColor: 'var(--baby-powder)' }}>
-            Mesa Directiva
-          </h3>
-          
+        <div className="text-center md:text-left mb-6 md:mb-0 md:flex md:flex-col md:h-full">
           <div className="md:hidden mb-6">
             {/* Imagen real para mesa directiva - Mobile */}
             <div className="w-full h-32 rounded-lg mb-4 flex items-center justify-center overflow-hidden" style={{ backgroundColor: 'var(--baby-powder)' }}>
@@ -21,11 +17,7 @@ export default function DirectorsSection() {
             </div>
           </div>
           
-          <div className="space-y-4 md:space-y-6">
-            <p className="text-sm md:text-base lg:text-lg" style={{ color: 'var(--dim-gray)' }}>
-              Ya somos más de 200 chavos
-            </p>
-            
+          <div className="space-y-4 md:space-y-6">            
             <p className="text-xl md:text-3xl lg:text-4xl font-bold" style={{ color: 'var(--cocoa-brown)' }}>
               ¿Te nos unes?
             </p>
@@ -44,7 +36,12 @@ export default function DirectorsSection() {
                   type="button"
                 >
                   Mándanos un mensaje
-                  <MessageCircle className="w-6 h-6 transition-transform" style={{ color: 'var(--peach)' }} />
+                      <img
+                      src="/whatsapp-white.svg"
+                      alt="WhatsApp"
+                      className="w-6 h-6"
+                      style={{minWidth: '24px', minHeight: '24px', alignContent: 'center'}}
+                      />
                 </button>
               </a>
               <div className="hidden md:block space-y-3">
@@ -57,8 +54,8 @@ export default function DirectorsSection() {
         </div>
 
         {/* Imagen y contenido visual - Desktop: columna derecha */}
-        <div className="hidden md:block">
-          <div className="space-y-6">
+        <div className="hidden md:block md:flex md:items-center">
+          <div className="space-y-6 w-full">
             {/* Imagen real para mesa directiva - Desktop */}
             <div className="w-full h-64 lg:h-80 rounded-xl flex items-center justify-center shadow-lg overflow-hidden" style={{ backgroundColor: 'var(--baby-powder)' }}>
               <img
