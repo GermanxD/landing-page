@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function InstagramEmbed({ postId, className = "" }) {
   const [dynamicPostId, setDynamicPostId] = useState(postId);
   const [loading, setLoading] = useState(!postId);
+  const embedRef = useRef(null);
+  const scriptLoadedRef = useRef(false);
 
   useEffect(() => {
     // If no postId is provided, fetch it from the API
@@ -28,15 +30,50 @@ export default function InstagramEmbed({ postId, className = "" }) {
 
   useEffect(() => {
     // Load Instagram embed script
-    if (typeof window !== 'undefined' && window.instgrm) {
-      window.instgrm.Embeds.process();
-    } else {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
+    if (typeof window !== 'undefined') {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      } else if (!scriptLoadedRef.current) {
+        // Check if script already exists
+        const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+        if (!existingScript) {
+          const script = document.createElement('script');
+          script.src = 'https://www.instagram.com/embed.js';
+          script.async = true;
+          script.id = 'instagram-embed-script';
+          script.onload = () => {
+            scriptLoadedRef.current = true;
+            if (window.instgrm) {
+              window.instgrm.Embeds.process();
+            }
+          };
+          document.body.appendChild(script);
+        } else {
+          scriptLoadedRef.current = true;
+        }
+      }
     }
   }, [dynamicPostId]);
+
+  // Cleanup effect
+  useEffect(() => {
+    return () => {
+      // Clean up any Instagram embed-specific elements when component unmounts
+      if (typeof window !== 'undefined' && embedRef.current) {
+        const instagramEmbeds = embedRef.current.querySelectorAll('.instagram-media-rendered');
+        instagramEmbeds.forEach(embed => {
+          if (embed.parentNode) {
+            try {
+              embed.parentNode.removeChild(embed);
+            } catch (error) {
+              // Ignore removeChild errors - element might already be removed
+              console.warn('Instagram embed cleanup warning:', error.message);
+            }
+          }
+        });
+      }
+    };
+  }, []);
 
   if (loading) {
     return (
@@ -58,6 +95,7 @@ export default function InstagramEmbed({ postId, className = "" }) {
 
   return (
     <blockquote 
+      ref={embedRef}
       className={`instagram-media ${className}`}
       data-instgrm-captioned 
       data-instgrm-permalink={instagramUrl}

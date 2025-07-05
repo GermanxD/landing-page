@@ -56,3 +56,73 @@ body {
 .social-icon:hover {
   transform: scale(1.1) rotate(5deg);
 }
+
+/* Estilos para mejorar la experiencia móvil de embeds de redes sociales */
+.facebook-embed-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.facebook-embed-container .fb-page {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Estilos específicos para desktop */
+@media (min-width: 769px) {
+  .facebook-embed-container {
+    width: 100%;
+  }
+  
+  .facebook-embed-container .fb-page {
+    width: 100% !important;
+    min-width: 500px;
+  }
+  
+  .facebook-embed-container iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 768px) {
+  .facebook-embed-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .facebook-embed-container .fb-page {
+    min-width: 320px;
+    width: 100% !important;
+  }
+  
+  /* Asegurar que el iframe del Facebook sea responsivo */
+  .facebook-embed-container iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* Estilos para mejorar el scroll horizontal en móviles */
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cocoa-brown) transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: var(--cocoa-brown);
+  border-radius: 2px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background-color: var(--peach);
+}
