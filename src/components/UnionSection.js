@@ -165,7 +165,7 @@ export default function UnionSection() {
 
                 <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8">
                     {/* Imagen principal de la unión */}
-                    <div className="w-full h-40 md:h-60 lg:h-80 rounded-lg overflow-hidden shadow-md bg-gradient-to-br from-peach via-baby-powder to-cocoa-brown flex items-center justify-center">
+                    <div className="w-full h-40 md:h-60 lg:h-80 rounded-lg overflow-hidden shadow-md bg-gradient-to-br from-peach via-baby-powder to-cocoa-brown flex items-center justify-center flex-col">
                         <Image
                             src="/reunion-urbjj.jpg"
                             alt="Jóvenes de URBJJ en evento con las manos levantadas en alabanza"
@@ -177,12 +177,7 @@ export default function UnionSection() {
                             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                         />
                     </div>
-                    <p
-                        className="text-sm md:text-base italic text-center"
-                        style={{ color: "var(--cocoa-brown)" }}
-                    >
-                        Jóvenes de URBJJ unidos en alabanza y fe
-                    </p>
+
                 </div>
             </div>
         </section>
